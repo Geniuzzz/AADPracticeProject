@@ -1,14 +1,11 @@
 package com.geniuz.gads2020practiceapp.data.models
 
 import android.os.Parcelable
-import com.squareup.moshi.JsonClass
 import kotlinx.android.parcel.Parcelize
 
-@JsonClass(generateAdapter = true)
 @Parcelize
-data class HoursRankingItem(
+data class LBData (
     val badgeUrl: String,
-    val country: String,
-    val hours: Int,
-    val name: String
+    val name: String,
+    val score: String
 ): Parcelable
