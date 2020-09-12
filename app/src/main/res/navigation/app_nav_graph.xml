@@ -12,11 +12,13 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_leaderboardFragment"
-            app:destination="@id/leaderboardFragment" />
+            app:destination="@id/leaderboardFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/leaderboardFragment"
-        android:name="com.geniuz.gads2020practiceapp.presentation.LeaderBoardFragment"
+        android:name="com.geniuz.gads2020practiceapp.presentation.leaderboard.LeaderBoardFragment"
         android:label="fragment_leaderboard"
         tools:layout="@layout/fragment_leaderboard" >
         <action
@@ -25,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/submissionFragment"
-        android:name="com.geniuz.gads2020practiceapp.presentation.SubmissionFragment"
+        android:name="com.geniuz.gads2020practiceapp.presentation.submission.SubmissionFragment"
         android:label="fragment_submission"
         tools:layout="@layout/fragment_submission" />
 </navigation>
